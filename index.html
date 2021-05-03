@@ -3,50 +3,336 @@
 <head>
     <meta charset="UTF-8"> 
     <title>Google Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 
 <style>
 
+    
+  body {
 
-.center {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+      margin: 0;
+    
   }
 
-  #google-logo {
-      max-width: 300px;
-  }
+ul {
 
-  #search-box {
+margin: 10px 10px 0px 10px;
+}
 
-      max-width:800px;
-      border-radius: 25%; 
+   
+
+
+    .nav {
+
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        
+    }
+
+   
+    .nav-bar-left {
+
+        position: relative;
+        float: left;
+        width: auto;
+        
+        
+        
+
+    }
+
+
+    .nav-bar-right {
+
+        position: relative;
+        float: right;
+        width: auto;
+      
+        
+    }
+    
+    
+     li {
+        
+        list-style-type: none;
+        display:inline-block;
+        padding: 10px;
+        
+
+        
+        
+        
+    }
+
+     li a {
+
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-family: sans-serif;
+        text-align: center;
+    
+    }
+
+    li :hover {
+
+        text-decoration: underline;    
+
+    }
+
+    .google-logo {
+
+        max-width: 300px;
+        display:flex;
+        margin-top: 5%;
+        padding: 30px;
+        margin-left:auto;
+        margin-right: auto;
+
+    }
+
+
+
+    .search-area {
+
+        
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+     .search-box {
+    
+      
+      max-width:700px; 
+      min-width:470px;
+      border:none;
       border-radius: 20px 20px 20px 20px; 
-      border-color: rgb(209, 209, 209);
       height: 40px;
+      font-size: 16px;
+      padding-inline-end: 44px;
+      padding-inline-start: 52px;
+      box-shadow: 0 1px 4px rgb(158, 158, 158);
+      outline:none;
+      
+           }
+
+     .search-icon {
+
+         position: relative;
+         right: 93%;
+         top: 20%;
+         color: rgb(204, 204, 204);
+         
+        
+     }
+
+     .center {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    
+  }
+
+  .search-button {
+
+       background-color: rgb(247, 247, 247);
+       border: none;
+       border-radius: 5px;
+       height: 36px;
+       width: 170px;
+       cursor: pointer;
+       font: sans-serif;
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
      
       
   }
+
+  .search {
+
+      margin-right: 5px
+  }
+
+  .lucky { 
+
+      margin-left:5px;
+  }
+
+  .input {
+
+        max-width: 500px;
+        min-width: 500px;
+        padding: 10px;
+  }
+
+
+
+    
+        
+
+    
+
+  .footer {
+
+        position: absolute;
+        bottom:0;
+        height: 7%;
+        width: 100%;
+        background:rgb(233, 232, 232);
+        color: rgb(136, 136, 136);
+        
+
+}
+
+
+      
+  
+
+  .footer li a {
+
+        text-decoration: none;
+        color:rgb(136, 136, 136);
+        font-size: 14px;
+        font-family: sans-serif;
+        text-align: center;
+
+        
+
+  }
+
+  .footer ul li :hover {
+
+        text-decoration: underline;
+        cursor: pointer;
+
+  }
+
+  
+
+  .foot-left {
+
+        position:relative;
+        float:left;
+
+  }
+
+  .foot-right {
+
+      position:relative;
+      float:right;
+      margin-right: 3%
+  }
+
+
 
 
 
 </style>
 
-
-
 <body>
 
 
-<img id="google-logo" class="center" src="https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg" alt="google logo">
+           
+        <div class="nav">
+         
+                <div class="nav-bar-left">
+                    <ul>
+                        <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                        <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
+                    </ul>
+                </div>
+                <div class="nav-bar-right" >
+                    <ul>
+                        <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Drm%26ogbl&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a></li>
+                        <li><a href="https://www.google.co.uk/imghp?hl=en-GB&tab=ri&ogbl">Images</a></li>
+                        <li><span class="material-icons" style="text-decoration: none; cursor:pointer;" >apps</span></li>
+                        <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en-GB&passive=true&continue=https%3A%2F%2Fwww.google.co.uk%2Fimghp%3Fhl%3Den-GB%26tab%3Dri%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin" >Sign in</a></li>
+                    </ul>
+                </div>
 
-<form>
-     <input id="search-box" class="center" id="search-box" type="text" placeholder="Search Google or type a URL">
+        </div>
 
 
-</form>
+
+
+
+        <div>
+            <img class="google-logo"   src="https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg" alt="google logo">
+        </div>
+        
+
+        <form>
+
+            <div class="search-area">
+                <div class="search-box-position">            
+                    <input  class="search-box" type="search" placeholder="Search Google or type a URL">
+                    <span   class="material-icons search-icon">search</span>
+                </div>
+                    
+            
+            </div>
+             <br>
+
+            
+
+            <div class="center input">
+                <button class="search-button search center">Google Search</button>
+                <button class="search-button lucky center">I'm Felling Lucky</button> 
+            </div>
+            
+
+        </form>
+        
+
+   
+        
+
+        <footer class="footer">
+
+            <ul> 
+                   <div class="foot-left"> 
+                    <li><a href="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000067-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://smallbusiness.withgoogle.com/intl/en_uk/?subid=uk-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=uk-en_GB-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                   </div>
+                   
+                    <div class="foot-right">
+                    <li><a href="https://policies.google.com/privacy?hl=en-GB&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-GB&fg=1">Terms</a></li>
+                    <li><a>Settings</a></li>
+                    </div>
+
+                
+
+            </ul>
+
+        </footer>
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
 
 
 </body>
-</html>
